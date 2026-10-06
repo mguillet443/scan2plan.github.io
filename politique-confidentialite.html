@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scan2Plan – Politique de confidentialité</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/logo.png" alt="">Scan2Plan</a>
+    <nav>
+      <a href="./#fonctionnement">Fonctionnement</a>
+      <a href="./#support">Support</a>
+      <a href="politique-confidentialite.html">Confidentialité</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<article class="doc">
+<h1>Scan2Plan – Politique de confidentialité</h1>
+<p class="muted">Dernière mise à jour : 6 octobre 2026</p>
+
+<h2>En bref</h2>
+<p>L'application Scan2Plan ne collecte aucune donnée personnelle, n'affiche pas de publicité et n'envoie aucune statistique d'utilisation.
+Les seules données transmises sont les fichiers techniques nécessaires à la création d'un projet Revit, et uniquement au service Autodesk
+que vous utilisez avec votre propre compte.</p>
+
+<h2>Données traitées sur votre ordinateur</h2>
+<p>Le nuage de points (fichier .las) que vous choisissez est analysé <strong>localement</strong>. Les résultats (projet Revit, IFC, plans DXF,
+aperçu, rapport) sont enregistrés à côté de vos fichiers. Le mode « IFC + plans DXF (hors ligne) » et l'exemple fourni
+n'envoient <strong>aucune donnée</strong> sur Internet.</p>
+
+<h2>Données envoyées à Autodesk (mode « Projet Revit .rvt »)</h2>
+<p>Pour fabriquer le projet Revit, l'application envoie au service <strong>Autodesk Platform Services</strong> (Design Automation, stockage OSS),
+avec <strong>vos propres identifiants Autodesk</strong> :</p>
+<ul>
+  <li>la maquette simplifiée du bâtiment issue de l'analyse (géométrie des niveaux, murs, ouvertures, pièces, terrain, coordonnées du relevé) ;</li>
+  <li>le gabarit de projet Revit de votre poste, s'il est trouvé ;</li>
+  <li>un module technique Scan2Plan (installé une fois dans votre compte Autodesk).</li>
+</ul>
+<p>Le nuage de points brut n'est pas envoyé. Les fichiers sont déposés dans un espace de stockage temporaire de votre compte Autodesk
+(conservation automatique limitée à 24 heures), puis le projet Revit produit est téléchargé sur votre ordinateur.
+Ce traitement est régi par les conditions et la politique de confidentialité d'Autodesk : <a href="https://www.autodesk.com/company/legal-notices-trademarks/privacy-statement">www.autodesk.com</a>.</p>
+
+<h2>Identifiants Autodesk</h2>
+<p>Le Client ID et le Client Secret que vous saisissez sont stockés <strong>uniquement sur votre ordinateur</strong>, chiffrés pour votre session Windows
+(Windows DPAPI). Ils ne sont transmis qu'au service d'authentification d'Autodesk.</p>
+
+<h2>Partage</h2>
+<p>L'éditeur de Scan2Plan n'a pas accès à vos fichiers, à vos identifiants ni à vos projets, et ne partage aucune donnée avec des tiers.</p>
+
+<h2>Contact</h2>
+<p>Pour toute question : <a href="https://github.com/mguillet443/scan2plan.github.io/issues">page de support Scan2Plan</a>.</p>
+</article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Scan2Plan</span>
+    <span><a href="./">Accueil</a> · <a href="./#support">Support</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
