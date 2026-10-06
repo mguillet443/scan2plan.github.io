@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scan2Plan – Nuage de points vers projet Revit modifiable</title>
+<meta name="description" content="Scan2Plan transforme un relevé 3D (nuage de points LAS) en projet Revit natif modifiable, ouvert directement dans Revit LT.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/logo.png" alt="">Scan2Plan</a>
+    <nav>
+      <a href="#fonctionnement">Fonctionnement</a>
+      <a href="#support">Support</a>
+      <a href="politique-confidentialite.html">Confidentialité</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero wrap">
+    <h1>Du nuage de points au <span>projet Revit modifiable</span>, en une minute</h1>
+    <p class="lead">Glissez le dossier du relevé 3D : Scan2Plan détecte niveaux, murs, portes, fenêtres et pièces, puis ouvre un vrai projet Revit dans Revit LT.</p>
+    <div class="actions">
+      <!-- Remplacer par le lien du Microsoft Store une fois l'application publiée, et retirer la classe « disabled ». -->
+      <a class="btn disabled" id="store" href="#">Bientôt sur le Microsoft Store</a>
+      <a class="btn secondary" href="#fonctionnement">Comment ça marche</a>
+    </div>
+    <p class="note">Windows 10 et 11 · Revit LT 2026 / 2027 · Mode hors ligne IFC + DXF inclus</p>
+    <img class="shot" src="assets/capture-accueil.png" alt="Fenêtre de Scan2Plan : zone de glisser-déposer du relevé" width="1366" height="768">
+  </div>
+
+  <section class="soft" id="fonctionnement">
+    <div class="wrap">
+      <h2>Comment ça marche</h2>
+      <div class="grid">
+        <div class="card"><div class="step-num">1</div><h3>Glissez le relevé</h3><p>Le dossier livré par le géomètre ou le fichier .las, directement dans la fenêtre.</p></div>
+        <div class="card"><div class="step-num">2</div><h3>Analyse automatique</h3><p>Niveaux, murs avec leur épaisseur, portes, fenêtres, pièces, dalle, plafonds et terrain : environ 5 secondes pour 20 millions de points.</p></div>
+        <div class="card"><div class="step-num">3</div><h3>Projet Revit natif</h3><p>Le projet .rvt est créé à côté du relevé et s'ouvre dans Revit LT. Tous les éléments sont de vrais objets Revit, modifiables.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap two">
+      <figure>
+        <img src="assets/capture-plan.png" alt="Plan détecté : murs, portes, fenêtres et pièces sur la coupe du nuage de points" loading="lazy">
+        <figcaption>Murs, ouvertures et pièces détectés dans le nuage de points.</figcaption>
+      </figure>
+      <div>
+        <h2 style="text-align:left">Ce que contient le projet</h2>
+        <table>
+          <tr><th>Murs</th><td>Un type par épaisseur relevée, sur leur axe ; épaisseur mesurée ou signalée comme estimée.</td></tr>
+          <tr><th>Ouvertures</th><td>Portes et fenêtres du gabarit de votre Revit LT, aux dimensions relevées.</td></tr>
+          <tr><th>Pièces</th><td>Pièces, dalle et plafonds à la hauteur mesurée.</td></tr>
+          <tr><th>Terrain</th><td>Toposolide issu du relevé.</td></tr>
+          <tr><th>Coordonnées</th><td>Lambert-93 conservé (coordonnées partagées).</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap">
+      <h2>Deux modes</h2>
+      <div class="grid">
+        <div class="card"><h3>Projet Revit (.rvt)</h3><p>Le projet est fabriqué par le service cloud Autodesk Platform Services avec votre propre compte Autodesk (offre gratuite disponible). Scan2Plan utilise automatiquement la version et le gabarit de votre Revit LT.</p></div>
+        <div class="card"><h3>Hors ligne, sans compte</h3><p>Maquette IFC 4 géoréférencée et plans DXF par niveau (murs, ouvertures, pièces, coupe du nuage à 1 m), importables dans Revit LT et tous les logiciels de CAO.</p></div>
+      </div>
+      <img class="shot" src="assets/capture-conversion.png" alt="Conversion terminée : projet Revit créé en une trentaine de secondes" loading="lazy" width="1366" height="768">
+    </div>
+  </section>
+
+  <section id="support">
+    <div class="wrap">
+      <h2>Support</h2>
+      <div class="grid">
+        <div class="card"><h3>Une question, un problème ?</h3><p>Ouvrez une demande sur la page <a href="https://github.com/mguillet443/scan2plan.github.io/issues">Support (GitHub)</a> en joignant le texte du journal affiché dans la fenêtre. Ne communiquez jamais votre Client Secret Autodesk.</p></div>
+        <div class="card"><h3>Compte Autodesk</h3><p>Le mode Projet Revit utilise une application créée sur <a href="https://aps.autodesk.com">aps.autodesk.com</a> (API « Automation » et « Data Management »). Ses identifiants sont saisis dans Scan2Plan et chiffrés sur votre poste.</p></div>
+        <div class="card"><h3>Essayer sans compte</h3><p>Dans Scan2Plan, cliquez sur « Essayer avec l'exemple » : une maison de démonstration est convertie hors ligne en IFC et plans DXF.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Scan2Plan</span>
+    <span><a href="politique-confidentialite.html">Politique de confidentialité</a> · <a href="#support">Support</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
