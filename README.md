@@ -5,4 +5,4 @@ Site de présentation, page de support et politique de confidentialité de l'app
 
 - `index.html` : présentation et support
 - `politique-confidentialite.html` : politique de confidentialité (URL à renseigner dans le Microsoft Store)
-- Une fois l'application publiée, remplacer le lien du bouton « Bientôt sur le Microsoft Store » (`id="store"`) dans `index.html`.
+- Application sur le Microsoft Store : https://apps.microsoft.com/detail/9PN5K3984959 (bouton `id="store"` de `index.html`).
